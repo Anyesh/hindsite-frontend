@@ -1,6 +1,7 @@
 # hindsite Frontend- Anish Shrestha
 
 Run the project dev using following command:
+
 Note: Make sure that you have right API endoiing. See that in `/src/config.js`
 
 ```
