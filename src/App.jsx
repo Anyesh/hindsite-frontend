@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { ROOT_API } from './config';
 import Dashboard from './pages/Dashboard';
-import ForgotPassword from './pages/ForgotPassword';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import PrivateRoute from './utils/PrivateRoute';
@@ -76,13 +75,8 @@ function App() {
         />
 
         <Route exact path='/register' element={<Register />} />
-        <Route exact path='/forgot-password' element={<ForgotPassword />} />
 
         <Route exact path='/login' element={<Login />} />
-        {/*       
-      <Route path="/confirm" exact element={Confirm} />
-      <Route path="/reset_request" exact element={ResetForm} /> */}
-        <Route path='/reset' exact element={<ForgotPassword />} />
       </Routes>
       <hr className=' border-yellow-400' />
       <div className='flex flex-wrap items-center md:justify-between justify-center'>
